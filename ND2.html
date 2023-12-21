@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="nd2.css">
+  <script src="https://kit.fontawesome.com/169c0d9b7f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="kambariai">
+
+<div class="tempIrsviesa" id="test">
+
+    <div class="jungtukas">
+    <label class="toggle-switch1">
+        <input type="checkbox" onclick="return toggleLight1()">
+        <span class="toggle-slider"></span>
+      </label>
+      <i id="lightIcon1" class="fa-regular fa-lightbulb"></i>
+    </div>
+
+    <div class="kambarys"><i class="fa-solid fa-couch"></i></div>
+    <div class="kambarioPavadinimas">Svetainė</div>
+    <div class="slideris">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="0" class="slider1" onmousemove="rangeSliderValue1(this.value)" ontouchmove="rangeSliderValue1(this.value)" id="sliderSvetaine">
+        <span id="rangeValue1">16°C</span>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+<div class="tempIrsviesa" id="test">
+
+  <div class="jungtukas">
+  <label class="toggle-switch2">
+      <input type="checkbox" onclick="return toggleLight2()">
+      <span class="toggle-slider"></span>
+    </label>
+    <i id="lightIcon2" class="fa-regular fa-lightbulb"></i>
+  </div>
+
+  <div class="kambarys"><i class="fa-solid fa-kitchen-set"></i></div>
+  <div class="kambarioPavadinimas">Virtuvė</div>
+  <div class="slideris">
+    <div class="slider-container">
+      <input type="range" min="0" max="100" value="0" class="slider2" onmousemove="rangeSliderValue2(this.value)" ontouchmove="rangeSliderValue2(this.value)">
+      <span id="rangeValue2">16°C</span>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="tempIrsviesa" id="test">
+
+  <div class="jungtukas">
+  <label class="toggle-switch3">
+      <input type="checkbox" onclick="return toggleLight3()">
+      <span class="toggle-slider"></span>
+    </label>
+    <i id="lightIcon3" class="fa-regular fa-lightbulb"></i>
+  </div>
+
+  <div class="kambarys"><i class="fa-solid fa-book"></i></div>
+  <div class="kambarioPavadinimas">Darbo kambarys</div>
+  <div class="slideris">
+    <div class="slider-container">
+      <input type="range" min="0" max="100" value="0" class="slider3" onmousemove="rangeSliderValue3(this.value)" ontouchmove="rangeSliderValue3(this.value)">
+      <span id="rangeValue3">16°C</span>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="tempIrsviesa" id="test">
+
+<div class="jungtukas">
+<label class="toggle-switch4">
+    <input type="checkbox" onclick="return toggleLight4()">
+    <span class="toggle-slider"></span>
+  </label>
+  <i id="lightIcon4" class="fa-regular fa-lightbulb"></i>
+</div>
+
+<div class="kambarys"><i class="fa-solid fa-toilet"></i></div>
+<div class="kambarioPavadinimas">Tualetas</div>
+<div class="slideris">
+  <div class="slider-container">
+    <input type="range" min="0" max="100" value="0" class="slider4" onmousemove="rangeSliderValue4(this.value)" ontouchmove="rangeSliderValue4(this.value)">
+    <span id="rangeValue4">16°C</span>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="tempIrsviesa" id="test">
+
+  <div class="jungtukas">
+  <label class="toggle-switch5">
+      <input type="checkbox" onclick="return toggleLight5()">
+      <span class="toggle-slider"></span>
+    </label>
+    <i id="lightIcon5" class="fa-regular fa-lightbulb"></i>
+  </div>
+  
+  <div class="kambarys"><i class="fa-solid fa-bed"></i></div>
+  <div class="kambarioPavadinimas">Miegamasis 1</div>
+  <div class="slideris">
+    <div class="slider-container">
+      <input type="range" min="0" max="100" value="0" class="slider5" onmousemove="rangeSliderValue5(this.value)" ontouchmove="rangeSliderValue5(this.value)">
+      <span id="rangeValue5">16°C</span>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+
+
+  <div class="tempIrsviesa" id="test">
+
+    <div class="jungtukas">
+    <label class="toggle-switch6">
+        <input type="checkbox" onclick="return toggleLight6()">
+        <span class="toggle-slider"></span>
+      </label>
+      <i id="lightIcon6" class="fa-regular fa-lightbulb"></i>
+    </div>
+    
+    <div class="kambarys"><i class="fa-solid fa-bed"></i></div>
+    <div class="kambarioPavadinimas">Miegamasis 2</div>
+    <div class="slideris">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="0" class="slider6" onmousemove="rangeSliderValue6(this.value)" ontouchmove="rangeSliderValue6(this.value)">
+        <span id="rangeValue6">16°C</span>
+      </div>
+    </div>
+    
+    </div>
+
+    <div class="tempIrsviesa" onclick="popUp2('dingsta2')"> 
+      <div class="uzraktai">
+        Durys
+        <i class="fa-solid fa-door-closed"></i>
+        <i class="fa-solid fa-lock" id="lockIcon2"></i>
+      </div> 
+    </div>
+
+    <div class="tempIrsviesa" onclick="popUp('dingsta')">
+      <div class="uzraktai">
+        Garažas
+        <i class="fa-solid fa-warehouse"></i>
+        <i class="fa-solid fa-lock" id="lockIcon"></i>
+      </div>
+    </div>
+    
+    <div class="dingsta" id="dingsta">
+      <div class="passwordBox">
+        <p>Slaptažodis</p>
+        <form id="manoForma">
+          <input type="text" id="slaptazodis">
+          <div style="margin-top: 15px;   display: flex; flex-direction: row; align-items: center; justify-content: space-around; width: 100%;">
+            <div id="OK" onclick="garazas()">OK</div>
+            <div id="Cancel" onclick="popDown('dingsta')">Cancel</div>
+            <!-- <input type="submit" value="OK" id="OK" onclick="garazas()">
+            <input type="submit" value="Cancel" id="Cancel"> -->
+          </div>
+          <p id="Neteisinga" style="margin: 16px;"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="dingsta2" id="dingsta2">
+      <div class="passwordBox">
+        <p>Slaptažodis</p>
+        <form id="manoForma">
+          <input type="text" id="slaptazodis2">
+          <div style="margin-top: 15px;   display: flex; flex-direction: row; align-items: center; justify-content: space-around; width: 100%;">
+            <div id="OK" onclick="durys()">OK</div>
+            <div id="Cancel" onclick="popDown2('dingsta2')">Cancel</div>
+            <!-- <input type="submit" value="OK" id="OK" onclick="garazas()">
+            <input type="submit" value="Cancel" id="Cancel"> -->
+          </div>
+          <p id="Neteisinga2" style="margin: 16px;"></p>
+        </form>
+      </div>
+    </div>
+
+</div>
+
+<script src="nd2.js"></script>
+</body>
+
+</html>

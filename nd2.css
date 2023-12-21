@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+    font-style: normal; 
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(OpenSans-Italic-VariableFont_wdth,wght.ttf); 
+    font-style: italic;
+}
+body{
+font-family: "OpenSans";
+    font-style: normal;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, rgb(0, 0, 128) 0%, rgb(255, 255, 255) 100%);
+}
+.kambariai{
+  height: 740px;
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tempIrsviesa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  background-color: rgba(43, 20, 96, 0.8); /* Background color with opacity */
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+.jungtukas{
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+    font-size: xx-large;
+    color: white;
+    top: 5vw;
+    left: 5vw;
+    margin-bottom: 10px;
+}
+
+.toggle-switch1,
+.toggle-switch2,
+.toggle-switch3,
+.toggle-switch4,
+.toggle-switch5,
+.toggle-switch6 {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+.toggle-switch1 input,
+.toggle-switch2 input,
+.toggle-switch3 input,
+.toggle-switch4 input,
+.toggle-switch5 input,
+.toggle-switch6 input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  input:checked + .toggle-slider {
+    background-color: #64f321;
+  }
+
+  input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
+
+
+  .kambarys{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 300%;
+    color: white;
+  }
+
+.kambarioPavadinimas{
+  font-size: 120%;
+  color: white;
+}
+.slideris {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rangeValue1,
+#rangeValue2,
+#rangeValue3,
+#rangeValue4,
+#rangeValue5,
+#rangeValue6 {
+  position: relative;
+  bottom: -1px;
+  color: white;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+}
+
+.slider1,.slider2,.slider3,.slider4,.slider5,.slider6 {
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  width: 110px;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgb(214, 214, 214) 60%, rgb(214, 214, 214) 60%);
+}
+
+.slider1::-webkit-slider-thumb,
+.slider2::-webkit-slider-thumb,
+.slider3::-webkit-slider-thumb,
+.slider4::-webkit-slider-thumb,
+.slider5::-webkit-slider-thumb,
+.slider6::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: white;
+  margin-top: 0px;
+}
+.uzraktai{
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+.fa-door-closed,.fa-warehouse{
+  font-size: 300%;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+.passwordBox{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vw;
+  width: 90vw;
+  border-radius: 10px;
+  background-color: rgba(45, 26, 130, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 200%;
+}
+#manoForma{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slaptazodis, #slaptazodis2{
+  height: 50px;
+  width: 280px;
+  border-radius: 10px;
+  font-size: 180%;
+  color: white;
+  background-color: rgb(181, 181, 181);
+  border: none;
+  margin: 10px;
+  text-align: center;
+}
+#OK {
+  color: white;
+  font-size: 100%;
+  height: 50px;
+  width: 140px;
+  background-color: green;
+  border: none; 
+  cursor: pointer; 
+  border-radius: 10px;
+  text-align: center;
+}
+#Cancel{
+  color: white;
+  font-size: 100%;
+  height: 50px;
+  width: 140px;
+  background-color: red;
+  border: none; 
+  cursor: pointer; 
+  border-radius: 10px;
+  text-align: center;
+}
+#dingsta, #dingsta2{
+  display: none;
+}
